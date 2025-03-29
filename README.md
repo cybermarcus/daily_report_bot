@@ -42,6 +42,7 @@ daily_report_bot/
 3. После успешного поднятия контейнеров интерфейс Airflow будет развернут на http://localhost:8080/
 4. Авторизуемся (по умолчанию логин и пароль — airflow), находим в списке необходимый DAG и включаем его. Здесь же можно будет следить за выполнением всех task.
 
+![Airflow_interface](https://s329vlx.storage.yandex.net/rdisk/b9332c5722ce6c5d008502aa8a6a8a1721b3c8ea316ebe3f8f8cfc4c8581ce46/67e8793f/bdfbaxGJJwkhYzrYQCLcaxqqjAueNnZGM8802MW-1Hg9-6we_uWFst5JHmKk9vtqpKiOnNlGtb_5bBOHhDm_zQ==?uid=482408657&filename=Airflow_interface.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=482408657&fsize=193451&hid=df85ab2f86a23441dc508e75a724daf5&media_type=image&tknv=v2&etag=40c4c1504531a797b8d8f9b954ba8a91&ts=6318304118dc0&s=c037ee003b690be7a5248f1fa8033d27d47259f43434427d0f9eaa9e9911250c&pb=U2FsdGVkX1_J0KZNaH_Ep7hKotpV-3BtBBRNcPzkmvCZYroVrVdSrhpXjGeQywMGfKQgR_9gAmuDbe9ageipxrvzBg_N2BVjAOCOId2lh0A)
 
 ### Использованные инструменты
 Docker, Airflow 2.0, SQL, ClickHouse, python, pandas, seaborn, asyncio, API Telegram
