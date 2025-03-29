@@ -1,0 +1,5 @@
+matplotlib
+seaborn
+pandahouse==0.2
+telegram==0.0.1
+python-telegram-bot==21.6
