@@ -11,8 +11,8 @@ daily_report_bot/
 ├── dags/
 │   ├── CH.py
 │   └── daily_report.py
-├── logs
-├── plugins
+├── logs/
+├── plugins/
 ├── .env
 ├── .gitignore
 ├── airflow.sh
