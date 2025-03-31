@@ -37,13 +37,15 @@ daily_report_bot/
 
 ### Развертывание проекта
 Для развертывания проекта должен быть установлен Docker и Docker Compose.
-1. В директории с проектом запускается команда `docker compose build`, которая собирает образы, определённые в файле docker-compose.yaml и Dockerfile
-2. Командой `docker compose up -d` поднимаем контейнеры в фоновом режиме
-3. После успешного поднятия контейнеров интерфейс Airflow будет развернут на http://localhost:8080/
-4. Авторизуемся (по умолчанию логин и пароль — airflow), находим в списке необходимый DAG и активируем его. Здесь же можно будет следить за выполнением всех task.
+1. С помощью BotFather создается Telegram-бот. Token бота и id чата, в который будет отправляться отчет, сохраняются в файл с переменными окружения. Туда же сохраняются параметры для подключения к БД.
+2. В директории с проектом запускается команда `docker compose build`, которая собирает образы, определённые в файле docker-compose.yaml и Dockerfile
+3. Командой `docker compose up -d` поднимаем контейнеры в фоновом режиме
+4. После успешного поднятия контейнеров интерфейс Airflow будет развернут на http://localhost:8080/
+5. Авторизуемся (по умолчанию логин и пароль — airflow), находим в списке необходимый DAG и активируем его. Здесь же можно будет следить за выполнением всех task.
 
 ![Airflow_interface](https://s329vlx.storage.yandex.net/rdisk/b9332c5722ce6c5d008502aa8a6a8a1721b3c8ea316ebe3f8f8cfc4c8581ce46/67e8793f/bdfbaxGJJwkhYzrYQCLcaxqqjAueNnZGM8802MW-1Hg9-6we_uWFst5JHmKk9vtqpKiOnNlGtb_5bBOHhDm_zQ==?uid=482408657&filename=Airflow_interface.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=482408657&fsize=193451&hid=df85ab2f86a23441dc508e75a724daf5&media_type=image&tknv=v2&etag=40c4c1504531a797b8d8f9b954ba8a91&ts=6318304118dc0&s=c037ee003b690be7a5248f1fa8033d27d47259f43434427d0f9eaa9e9911250c&pb=U2FsdGVkX1_J0KZNaH_Ep7hKotpV-3BtBBRNcPzkmvCZYroVrVdSrhpXjGeQywMGfKQgR_9gAmuDbe9ageipxrvzBg_N2BVjAOCOId2lh0A)
 
+![Telegram_screenshot](https://s43klg.storage.yandex.net/rdisk/7dd5d1963d186bd72786ae4454c7eb92461aa1a576da43f65d270f2f9460f99c/67eb1d24/bdfbaxGJJwkhYzrYQCLca-5IKwqR9yTVYn81aYbXLMMz5lKXouCv7yi1Wd8Yh3HUE-17vmZpnSeNHv6zhV_HRg==?uid=482408657&filename=Telegram_screenshot.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=482408657&fsize=212593&hid=e8500de2b6aee2d910d2e496223b8b15&media_type=image&tknv=v2&etag=a4040b41ef6d83768d45c3d476dc3ed5&ts=631ab4d669100&s=4b1e50420eb281bce53ca5c0c45012ceda20afc74ca24b7d5e4819827625e1e6&pb=U2FsdGVkX18YumG514YKyVLeCug4g9Z77JudzV1fyrShLjWSVz7gNc1knAWNfs8YUnM1ko-2ZDQFz3DNZFdGqWLkFOx9-6muDucaVlKKBL0)
 ### Использованные инструменты
 Docker, Airflow 2.0, SQL, ClickHouse, python, pandas, seaborn, asyncio, API Telegram
 
